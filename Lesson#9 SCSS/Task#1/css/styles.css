@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main_container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main_container header {
+  text-align: center;
+  font-size: 55px;
+  padding-top: 80px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.content .block {
+  text-align: center;
+  padding: 40px;
+  margin: 50px 60px 50px 60px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
+  border: 1px solid transparent;
+}
+.content .block h3 {
+  text-transform: uppercase;
+}
+.content .block .text {
+  text-align: center;
+  padding: 20px;
+}
+.content .block .text .text_dol {
+  font-weight: bold;
+  font-size: 30px;
+}
+.content .block .text .text_price {
+  font-weight: bold;
+  font-size: 60px;
+}
+.content .block .text .text_mon {
+  color: gray;
+  font-size: 20px;
+}
+
+ul {
+  margin-right: 40px;
+}
+ul li {
+  list-style-type: none;
+  color: #8492AF;
+}
+ul li::before {
+  content: "☑";
+  color: #5284FF;
+}
+ul .symbol_x::before {
+  content: "☒";
+  color: #F83C7B;
+}
+
+.long_text {
+  text-align: center;
+}
+.long_text h4 {
+  color: #8492AF;
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+footer .btn {
+  width: 170px;
+  height: 35px;
+  background-color: #5584FF;
+  border-radius: 30px;
+  color: white;
+  border: 1px solid transparent;
+}
+footer .btn:hover {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=styles.css.map */

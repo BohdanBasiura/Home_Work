@@ -1,0 +1,19 @@
+
+.holder {
+  margin: 7px;
+}
+.box_1 {
+  color: white;
+  padding: 50px;
+  margin: 3px;
+}
+.box_2 {
+  margin: 2px;
+  color: white;
+  padding: 30px 40px 30px 40px;
+}
+.box_3 {
+  margin: 2px;
+  padding: 40px;
+}
+

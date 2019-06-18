@@ -1,0 +1,100 @@
+$ff : 'Roboto', sans-serif;
+$ta : center;
+$bd : 1px solid transparent;
+$fw : bold;
+$txtcolor : #8492AF;
+$fs : 20px;
+$bgcolor : gray;
+$fcolor : white;
+
+body {
+  font-family: $ff;
+}
+
+  .main_container {
+    max-width: 1920px;
+    margin: 0 auto;
+    header {
+      text-align: $ta;
+      font-size: 55px;
+      padding-top: 80px;
+    }
+  }
+
+  .content {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     max-width: 100%;
+        .block {
+          text-align: $ta;
+          padding: 40px;
+          margin: 50px 60px 50px 60px;
+          background-color: $fcolor;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.336);
+          border: $bd;
+             h3 {
+              text-transform: uppercase;
+             }
+        .text {
+          text-align: $ta;
+          padding: 20px;
+            .text_dol {
+              font-weight: $fw;
+              font-size: $fs + 10;
+             }
+           .text_price {
+              font-weight: $fw;
+              font-size: $fs + 40;
+             }
+          .text_mon {
+             color: $bgcolor;
+             font-size: $fs;
+           }
+        }
+      }
+   }
+
+ul {
+  margin-right: 40px;
+    li {
+      list-style-type: none;
+      color: $txtcolor;
+    &::before {
+    content: "☑"; 
+      color: #5284FF;
+     }
+    }
+    .symbol_x::before {
+    content: "☒"; 
+    color: #F83C7B;
+  }
+}
+
+.long_text {
+  text-align: $ta;
+h4 {
+  color: $txtcolor;
+  font-weight: 300;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+ .btn {
+   width: 170px;
+   height: 35px;
+   background-color: #5584FF;
+   border-radius: 30px;
+   color: $fcolor;
+   border: $bd;
+ &:hover {
+  background-color: $bgcolor ;
+  }
+ }
+}
+
+
