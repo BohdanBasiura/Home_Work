@@ -1,0 +1,166 @@
+.container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1420px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.container header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #383A2D;
+  height: 80px;
+}
+.container header nav {
+  padding-top: 27px;
+}
+
+.fa-compass {
+  font-size: 50px;
+  color: white;
+  margin-left: 100px;
+  padding: 15px 0;
+}
+
+.nav_text {
+  text-decoration: none;
+  font-size: 23px;
+  margin-left: 20px;
+  color: white;
+}
+.nav_text:hover {
+  border: 1px solid gray;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 865px;
+  margin-left: 100px;
+}
+
+.text {
+  max-width: 400px;
+  margin-right: 200px;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  padding-top: 30px;
+}
+
+.button {
+  width: 110px;
+  height: 35px;
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+.button:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.btn {
+  padding-top: 15px;
+}
+
+article {
+  max-width: 690px;
+}
+article h2 {
+  padding: 20px 0;
+  color: red;
+}
+article .article_txt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+article .article_txt .first_txt {
+  color: black;
+  font-size: 25px;
+}
+article .article_txt .second_text {
+  color: gray;
+  font-size: 15px;
+  text-align: right;
+}
+
+h4 {
+  color: gray;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 400px;
+}
+aside h3 {
+  padding-top: 30px;
+}
+aside .fa-phone, aside .fa-laptop, aside .fa-telegram-plane {
+  color: gray;
+  font-size: 20px;
+}
+aside .contact {
+  padding-left: 15px;
+}
+aside .stars {
+  color: red;
+  font-size: 20px;
+}
+aside .aside_item {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav_text {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+  }
+  .nav_text:hover {
+    border: 1px solid gray;
+  }
+
+  .fa-compass {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    padding-top: 22px;
+  }
+
+  .main_box {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box {
+    margin: 0 auto;
+  }
+
+  .text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

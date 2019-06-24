@@ -1,0 +1,157 @@
+$bd : 1px solid gray;
+$fs : 50px;
+$ml : 20px;
+$col-w : white;
+$col-gr : gray;
+$max-w : 100%;
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1420px;
+    margin: 0 auto;
+    border-radius: 5px;
+    header {
+        @include flex;
+        background-color: #383A2D;
+        height: 80px;
+        nav {
+            padding-top: 27px; 
+        }
+    }
+}
+.fa-compass {
+    font-size: $fs;
+    color: $col-w;
+    margin-left: $ml*5;
+    padding: 15px 0;
+}
+.nav_text {
+    text-decoration: none;
+    font-size: $fs - 27;
+    margin-left: $ml;
+color: $col-w;
+    &:hover {
+        border: $bd;
+    }
+} 
+main {
+    @include flex;
+}
+.main_box {
+    @include flex;
+    justify-content: space-between;
+    max-width: 865px;
+    margin-left: $ml*5;
+}
+.text {
+    max-width: 400px;
+    margin-right: 200px;
+}
+.photo {
+    width: 220px;
+    height: 220px;
+    padding-top: 30px;
+}
+.button {
+    width: 110px;
+    height: 35px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: $col-w;
+    &:hover {
+        background-color: $col-w;
+        color: red;
+        border: 2px solid red;
+    }
+}
+.btn {
+    padding-top: 15px;
+}
+
+article {
+    max-width: 690px;
+    h2 {
+        padding: 20px 0;
+        color: red;
+    }
+    .article_txt {
+        @include flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        .first_txt {
+            color: black;
+            font-size: $fs - 25px;
+        }
+        .second_text {
+            color: $col-gr;
+            font-size: $fs - 35px;
+            text-align: right;
+        }
+    }
+}
+h4 {
+    color: $col-gr;
+}
+aside {
+    @include flex;
+    flex-direction: column;
+    max-width: 400px;
+    h3 {
+        padding-top: 30px;
+    }
+    .fa-phone, .fa-laptop, .fa-telegram-plane {
+        color: $col-gr;
+        font-size: 20px;
+    }
+    .contact {
+        padding-left: 15px;
+    }
+    .stars {
+        color: red;
+        font-size: 20px;
+    }
+    .aside_item {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav_text {
+        text-decoration: none;
+        font-size: $fs - 34;
+    color: $col-w;
+        &:hover {
+            border: $bd;
+        }
+    } 
+    .fa-compass {
+        font-size: $fs - 20;
+        color: $col-w;
+        margin-left: $ml - 10;
+        padding-top: 22px;
+    }
+    
+    .main_box,{
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        margin: 0 auto;
+    }
+    .text {
+        margin: 0 auto;
+        text-align: center;
+    }
+  h3 {
+    text-align: center;
+  }
+}

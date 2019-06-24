@@ -1,0 +1,89 @@
+$max-w : 50%;
+$col-red : red;
+$fw : bold;
+$fs : 50px;
+$col-gr : gray;
+
+.main_container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    .container {
+        max-width: $max-w + 10;
+        header {
+            display: flex;
+            padding-bottom: 20px;
+        }
+    }
+}
+.photo {
+    width: 250px;
+    height: 250px;
+}
+
+.contact_text {
+    width: 40%;
+    padding-top: 0;
+    padding-left: 50px;
+}
+.article_txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    .first_txt {
+        color: black;
+        font-size: $fs - 30px;
+        font-weight: $fw;
+    }
+    .second_txt {
+        color: $col-gr;
+        font-size: $fs - 30px;
+    }
+   
+}
+.contact {
+    color: $col-red;
+    font-weight: $fw;
+
+}
+.stars {
+    color: gold;
+}
+.name {
+font-size: $fs - 25;
+font-weight: $fw;
+}
+i {
+    font-size: $fs - 30;
+    color: $col-gr;
+}
+aside {
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 40%;
+}
+@media screen and (max-width: 800px) {
+    .main_container {
+        max-width: 940px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+header,  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+@media print { 
+.second_txt, .contact, .stars , i {
+ color: black;
+}
+.photo {
+filter: grayscale(100%); 
+}
+}
